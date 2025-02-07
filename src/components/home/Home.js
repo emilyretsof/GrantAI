@@ -44,25 +44,25 @@ const Home = () => {
                 alt="banner"
                 className="header-image"
             />
-            
-    <div className="data-container">
-      <h2>Data from API</h2>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div className="data-list">
-          {data.map((item, index) => (
-            <div key={index} className="data-item">
-              {Object.entries(item).map(([key, value]) => (
-                <p key={key}>
-                  <strong>{key}:</strong> {value || "N/A"}
-                </p>
-              ))}
+
+        <div className="data-container">
+        <h2>Data from API</h2>
+        {loading ? (
+            <p>Loading...</p>
+        ) : (
+            <div className="data-list">
+            {data.map((item, index) => (
+                <div key={index} className="data-item">
+                {Object.entries(item).map(([key, value]) => (
+                    <p key={key}>
+                    <strong>{key}:</strong> {value || "N/A"}
+                    </p>
+                ))}
+                </div>
+            ))}
             </div>
-          ))}
+        )}
         </div>
-      )}
-    </div>
 
                 {/* Conditionally Render Buttons */}
                 {isApplicant ? (
