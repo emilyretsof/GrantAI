@@ -1,0 +1,84 @@
+.home-page {
+    text-align: center;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the page takes up the full height of the viewport */
+    justify-content: space-between;  /* Distribute space between content */
+}
+
+
+.header-image {
+    width: 100%; /* Full width of the page */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Removes any inline gaps */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.data-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .data-item {
+    padding: 12px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .data-item p {
+    margin: 6px 0;
+  }
+  
+  .data-item strong {
+    color: #333;
+  }
+
+
+.submit-abstract-button, .view-submission-button {
+    background-color: #58a6db; /* Green background */
+    border: none;
+    align-self: center;  /* Centers the button horizontally */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-abstract-button:hover {
+    background-color: #237ebb; /* Darker green on hover */
+}
+
+.new-abstract-button, .view-submission-button {
+    background-color: #58a6db; /* Green background */
+    border: none;
+    align-self: center;  /* Centers the button horizontally */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}

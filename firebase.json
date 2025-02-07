@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "GrantAI",
+    "public": "build",
+    "rewrites": [
+      {
+        "source": "/**",
+        "destination": "/index.html"
+      }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

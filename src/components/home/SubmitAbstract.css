@@ -1,0 +1,223 @@
+/* Container for the whole page */
+.submit-abstract-page, .view-submission-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centers the content vertically */
+    padding: 40px;
+    background-image: conic-gradient(from 45deg, #E0F7FA, #B3E5FC, #b7d5f2);
+    /* background-image: linear-gradient(to top, #ffffff, #9cd8f8);  */
+    background-size: cover; /* Ensures the gradient covers the entire container */
+}
+
+/* Container for the abstract submission */
+.submit-abstract-container, .view-submission-container {
+    padding: 40px;    
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(157, 157, 157, 0.5); /* Initial shadow */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    margin-bottom: 40px; /* Space between the form and the guidelines */
+    width: 100%; /* Allow it to resize based on window width */
+    max-width: 800px; /* Maximum width to prevent it from growing too large */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if needed */
+}
+
+.submit-abstract-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+}
+
+/* Title */
+.submit-abstract-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #277cb5; /* Color for the title */
+}
+
+/* File upload section */
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+    width: 100%;
+    max-width: 500px;
+}
+
+/* File input field */
+.file-input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-input:focus {
+    border-color: #2e82ac; /* Green border on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(46, 130, 172, 0.6); /* Soft glow around the input */
+}
+
+/* Button style */
+.upload-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #58a6db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+.upload-button:hover {
+    background-color: #237ebb; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.upload-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Message display */
+.message {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #f44336; /* Red background for error */
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.message.success {
+    background-color: #4CAF50; /* Green background for success */
+}
+
+.message.error {
+    background-color: #f44336; /* Red background for error */
+}
+
+.message.info {
+    background-color: #2196F3; /* Blue background for info */
+}
+
+/* Guidelines section with darker glass effect */
+.submission-guidelines {
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    background: #58a6db; /* Darker background */
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(157, 157, 157, 0.5); /* Initial shadow */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+}
+
+.submission-guidelines:hover {
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+}
+
+.submission-guidelines h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.submission-guidelines ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.submission-guidelines li {
+    margin-bottom: 5px;
+}
+
+.submission-message, .submission-header {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.submission-header{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.new-abstract-button{
+    background-color: #58a6db; 
+    border: none;
+    align-self: center;  /* Centers the button horizontally */
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-submission-button {
+    background-color: transparent; /* No background */
+    border: none; /* Remove border */
+    color: rgb(61, 61, 65); /* Standard hyperlink color */
+    text-decoration: underline; /* Add underline */
+    font-size: 16px; /* Typical hyperlink size */
+    cursor: pointer; /* Pointer cursor to mimic a link */
+    padding: 0; /* Remove padding for a clean, link-like look */
+  }
+  
+.view-submission-button:hover {
+color: rgb(0, 0, 0); /* Change to darker blue on hover */
+text-decoration: none; /* Remove underline on hover for effect */
+}
+
+.delete-submission-button {
+    background-color: transparent; /* No background */
+    border: none; /* Remove border */
+    color: red; /* Red font color */
+    font-size: 24px; /* Slightly bigger size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 10px; /* Add some spacing to the right */
+    padding: 5px; /* Add slight padding for better clickability */
+  }
+  
+  .delete-submission-button:hover {
+    color: darkred; /* Darker red color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  
+  .submission-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 12px; /* Add spacing between submissions */
+  }
+

@@ -1,0 +1,184 @@
+/* General Layout for Profile Page */
+.profile-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #ffffff, #9cd8f8); /* Light blue gradient */
+    background-size: cover; /* Ensures the gradient covers the entire container */
+}
+.profile-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome-message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #58a6db;
+    margin-bottom: 20px;
+}
+
+/* Profile Actions Section */
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;      /* Center buttons horizontally */
+
+}
+
+/* Buttons Styling */
+.edit-profile-button,
+.logout-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Edit Profile Button */
+.edit-profile-button {
+    background-color: #58a6db;  /* blue color for Edit */
+    color: white;
+}
+
+.edit-profile-button:hover {
+    background-color: #237ebb;  /* Darker blue on hover */
+}
+
+/* Log Out Button */
+.logout-button {
+    background-color: #58a6db;  /* blue color for Log Out */
+    color: white;
+}
+
+.logout-button:hover {
+    background-color: #237ebb;  /* Darker blue on hover */
+}
+
+/* Button Disabled state */
+.edit-profile-button:disabled,
+.logout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Add space between buttons */
+.profile-actions button {
+    margin-top: 10px;
+}
+
+/* Container for the Edit Profile Page */
+.edit-profile-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+.edit-profile-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Message Style (Success or Error Messages) */
+.message {
+    font-size: 1rem;
+    color: #88b5d7; /* blue color for error */
+    margin-bottom: 20px;
+}
+.message.success {
+    color: green; /* Success message color */
+}
+
+.message.error {
+    color: red;   /* Error message color */
+}
+/* Form Styling */
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;  /* Centers the form items horizontally */
+}
+
+/* Input Fields Styling */
+.input-field , .read-only{
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    margin: 5px 0;
+}
+
+
+/* Read-Only Fields */
+.read-only {
+    background-color: #e6e6e6;
+}
+
+/* Button Styling */
+.save-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #58a6db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+.save-button:hover {
+    background-color: #237ebb;  /* Darker blue on hover */
+}
+
+.save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Margin for Form Inputs */
+.edit-profile-form div {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+.edit-profile-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Loading State */
+.edit-profile-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+}
